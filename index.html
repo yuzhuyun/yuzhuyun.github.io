@@ -949,115 +949,14 @@
 
       
         
-          
-            <h1 id="1-Node-js-介绍"><a href="#1-Node-js-介绍" class="headerlink" title="1. Node.js 介绍"></a>1. Node.js 介绍</h1><pre><code>&lt;!--more--&gt;
-</code></pre><h2 id="1-1-网站开发模型（BS）"><a href="#1-1-网站开发模型（BS）" class="headerlink" title="1.1 网站开发模型（BS）"></a>1.1 网站开发模型（BS）</h2><ul>
-<li>Server<ul>
-<li>为客户端提交接口：数据</li>
-<li>Java、.Net、Ruby、Python、PHP、Go、Swift、Lua</li>
-<li>学 Node 本质不是在学 Node，在学 服务器（Web后台）编程</li>
-<li>请求<ul>
-<li>处理</li>
-</ul>
-</li>
-<li>响应</li>
-<li>大前端时代：JavaScript 语言也可以运行在服务器端</li>
-<li>使用 JavaScript 这门语言也可以进行服务器编程</li>
-<li>JavaScript 通过 Node.js 运行在服务器端</li>
-</ul>
-</li>
-<li>Browser<ul>
-<li>客户端：把一坨用户看不懂的数据变成友好的形式给用户体验</li>
-</ul>
-</li>
-</ul>
-<h2 id="1-2-什么是-Node-js？"><a href="#1-2-什么是-Node-js？" class="headerlink" title="1.2 什么是 Node.js？"></a>1.2 什么是 Node.js？</h2><blockquote>
-<p>简单的说 Node.js 就是运行在服务端的 JavaScript<br>Node开发就是利用 Ecmascript + 第三方开源库 + Node平台环境API进行编程</p>
-</blockquote>
-<ul>
-<li><p>什么是 JavaScript</p>
-<ul>
-<li>JavaScript 一个运行在浏览器端的脚本原因</li>
-<li>运行时：浏览器</li>
-<li>Ecmascript：JavaScript 基本语法：var、if-else、for、Array、Object、String、function</li>
-<li>BOM<ul>
-<li>Window</li>
-<li>DOM</li>
-</ul>
-</li>
-<li>渲染引擎</li>
-<li>JavaScript 解析执行引擎<ul>
-<li>在所有浏览器中，Google Chrome 的 V8 引擎是最快的 JS 脚本代码解析执行引擎</li>
-</ul>
-</li>
-<li>通过 V8 引擎解析和执行 JavaScript 代码</li>
-</ul>
-</li>
-<li><p>Node 官网：<a href="https://nodejs.org/en/" target="_blank" rel="external">https://nodejs.org/en/</a></p>
-</li>
-<li><p>Node.js® is a JavaScript runtime built on Chrome’s V8 JavaScript engine. </p>
-<ul>
-<li>Node.js 是一个构建与 Chrome V8 引擎之上的一个 JavaScript 运行时（执行环境）</li>
-<li>Node 使用 JavaScript 进行编程</li>
-<li>Node 采用了 Chrome 的 V8 引擎解析和执行 JavaScript 脚本代码</li>
-<li>Node 不是一种语言，Node 可以用来解析和执行 JavaScript 代码</li>
-<li>在 Node 没有 DOM、BOM 了，也不用去关心样式、结构问题了</li>
-<li>Node 在基本的 JavaScript 语言之上，或者在 Node 平台给 Ecmascript 提供了大量的底层编程接口<ul>
-<li>例如文件IO</li>
-<li>例如网络IO</li>
-<li>处理数据</li>
-<li>操作数据库</li>
-<li>构建网络服务</li>
-<li>。。。</li>
-</ul>
-</li>
-</ul>
-</li>
-<li>Node.js uses an event-driven, non-blocking I/O model that makes it lightweight and efficient. <ul>
-<li>event-driven：事件驱动<ul>
-<li>在 Node 中，也采用了类似于浏览器端的编程思想，事件模型编程思想</li>
-</ul>
-</li>
-<li>non-blocking I/O model：非阻塞IO模型<ul>
-<li>Node 中大量的通过类似于浏览器中 ajax 的方式进行编程</li>
-<li>绝大多数代码都是异步编程模型</li>
-</ul>
-</li>
-<li>lightweight &amp; efficient：轻量和高效</li>
-</ul>
-</li>
-<li>Node.js’ package ecosystem, npm, is the largest ecosystem of open source libraries in the world.<ul>
-<li>Node.js 包生态系统 Npm 是世界上最大的开源库生态系统</li>
-<li>largest ecosystem：最大的开源库生态系统</li>
-</ul>
-</li>
-</ul>
-<h2 id="1-3-使用-Node-可以做什么？"><a href="#1-3-使用-Node-可以做什么？" class="headerlink" title="1.3 使用 Node 可以做什么？"></a>1.3 使用 Node 可以做什么？</h2><ul>
-<li>开发网站服务器</li>
-<li>游戏服务器</li>
-<li>开发命令行工具<ul>
-<li>软件分为两种：</li>
-<li>GUI：看得见，鼠标点点点</li>
-<li>CLI：命令窗口，各种命令，选项参数等</li>
-</ul>
-</li>
-</ul>
-<h2 id="1-4-Node-发展史"><a href="#1-4-Node-发展史" class="headerlink" title="1.4 Node 发展史"></a>1.4 Node 发展史</h2><ul>
-<li>Node.js 由 Ryan Dahl 和一些其他的开发者于2009年在 Joyent 工作时发明</li>
-<li>Node 作者当初只是想做一个类似于 Apache 的服务器而已，最初的时候起的名字叫：webjs</li>
-<li>2009年2月，Ryan Dahl在博客上宣布准备基于V8创建一个轻量级的Web服务器并提供一套库。</li>
-<li>2009年5月，Ryan Dahl在GitHub上发布了最初版本的部分Node.js包，随后几个月里，有人开始使用Node.js开发应用。</li>
-<li>2009年11月和2010年4月，两届JSConf大会都安排了Node.js的讲座。</li>
-<li>2010年年底，Node.js获得云计算服务商Joyent资助，创始人Ryan Dahl加入Joyent全职负责Node.js的发展。</li>
-<li>2011年7月，Node.js在微软的支持下发布Windows版本。[2] </li>
-</ul>
-<h2 id="1-5-学习资源推荐"><a href="#1-5-学习资源推荐" class="headerlink" title="1.5 学习资源推荐"></a>1.5 学习资源推荐</h2><ul>
-<li>国内NodeJS开发者社区：<a href="https://cnodejs.org/" target="_blank" rel="external">https://cnodejs.org/</a></li>
-<li>《深入浅出Node.js》：作者：阿里巴巴.朴灵</li>
-</ul>
-<hr>
-
-          
+          <h1 id="1-Node-js-介绍"><a href="#1-Node-js-介绍" class="headerlink" title="1. Node.js 介绍"></a>1. Node.js 介绍</h1>
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2015/07/09/Node简介/#more" rel="contents">
+              Weiterlesen &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
         
       
     </div>
