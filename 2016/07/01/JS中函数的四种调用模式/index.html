@@ -88,24 +88,18 @@
 
 
 <meta name="description" content="函数模式特征:就是一个简单的函数调用，函数名前面没有任何的引导内容
-123456function foo()&amp;#123;&amp;#125;var func = function()&amp;#123;&amp;#125;foo();func();(function()&amp;#123;&amp;#125;)();
-this在函数模式中的含义：this在函数中表示全局对象，在浏览器中是window对象
-方法模式特征: 方法一定是依附于">
+123456function foo()&amp;#123;&amp;#125;var func = function()&amp;#123;&amp;#125;foo();func();(function()&amp;#123;&amp;#125;)();">
 <meta property="og:type" content="article">
 <meta property="og:title" content="JS中函数的四种调用模式">
 <meta property="og:url" content="http://yoursite.com/2016/07/01/JS中函数的四种调用模式/index.html">
 <meta property="og:site_name" content="个人博客">
 <meta property="og:description" content="函数模式特征:就是一个简单的函数调用，函数名前面没有任何的引导内容
-123456function foo()&amp;#123;&amp;#125;var func = function()&amp;#123;&amp;#125;foo();func();(function()&amp;#123;&amp;#125;)();
-this在函数模式中的含义：this在函数中表示全局对象，在浏览器中是window对象
-方法模式特征: 方法一定是依附于">
-<meta property="og:updated_time" content="2017-08-01T12:54:28.137Z">
+123456function foo()&amp;#123;&amp;#125;var func = function()&amp;#123;&amp;#125;foo();func();(function()&amp;#123;&amp;#125;)();">
+<meta property="og:updated_time" content="2017-02-10T08:51:30.837Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="JS中函数的四种调用模式">
 <meta name="twitter:description" content="函数模式特征:就是一个简单的函数调用，函数名前面没有任何的引导内容
-123456function foo()&amp;#123;&amp;#125;var func = function()&amp;#123;&amp;#125;foo();func();(function()&amp;#123;&amp;#125;)();
-this在函数模式中的含义：this在函数中表示全局对象，在浏览器中是window对象
-方法模式特征: 方法一定是依附于">
+123456function foo()&amp;#123;&amp;#125;var func = function()&amp;#123;&amp;#125;foo();func();(function()&amp;#123;&amp;#125;)();">
 
 
 
@@ -333,6 +327,7 @@ this在函数模式中的含义：this在函数中表示全局对象，在浏览
       
         <h2 id="函数模式"><a href="#函数模式" class="headerlink" title="函数模式"></a>函数模式</h2><p><strong>特征:</strong>就是一个简单的函数调用，函数名前面没有任何的引导内容</p>
 <figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">foo</span>(<span class="params"></span>)</span>&#123;&#125;</div><div class="line"><span class="keyword">var</span> func = <span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;&#125;</div><div class="line"></div><div class="line">foo();</div><div class="line">func();</div><div class="line">(<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;&#125;)();</div></pre></td></tr></table></figure>
+<a id="more"></a>
 <p><code>this</code>在函数模式中的含义：<br><strong><em><code>this</code>在函数中表示全局对象，在浏览器中是window对象</em></strong></p>
 <h2 id="方法模式"><a href="#方法模式" class="headerlink" title="方法模式"></a>方法模式</h2><p><strong>特征:</strong> 方法一定是依附于一个对象, 将函数赋值给对象的一个属性, 那么就成为了方法.</p>
 <figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">f</span>(<span class="params"></span>) </span>&#123;</div><div class="line">    <span class="keyword">this</span>.method = <span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;&#125;;</div><div class="line">&#125;</div><div class="line"></div><div class="line"><span class="keyword">var</span> o = &#123;</div><div class="line">    <span class="attr">method</span>: <span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;&#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
