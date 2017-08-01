@@ -325,9 +325,7 @@
       
         
           
-            <p>#Array对象</p>
-<p>##Array对象属性</p>
-<table>
+            <h1 id="Array对象"><a href="#Array对象" class="headerlink" title="Array对象"></a>Array对象</h1><h2 id="Array对象属性"><a href="#Array对象属性" class="headerlink" title="Array对象属性"></a>Array对象属性</h2><table>
 <thead>
 <tr>
 <th>属性</th>
@@ -515,7 +513,7 @@
             <h2 id="函数模式"><a href="#函数模式" class="headerlink" title="函数模式"></a>函数模式</h2><p><strong>特征:</strong>就是一个简单的函数调用，函数名前面没有任何的引导内容</p>
 <figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">foo</span>(<span class="params"></span>)</span>&#123;&#125;</div><div class="line"><span class="keyword">var</span> func = <span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;&#125;</div><div class="line"></div><div class="line">foo();</div><div class="line">func();</div><div class="line">(<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;&#125;)();</div></pre></td></tr></table></figure>
 <p><code>this</code>在函数模式中的含义：<br><strong><em><code>this</code>在函数中表示全局对象，在浏览器中是window对象</em></strong></p>
-<p>##方法模式<br><strong>特征:</strong> 方法一定是依附于一个对象, 将函数赋值给对象的一个属性, 那么就成为了方法.</p>
+<h2 id="方法模式"><a href="#方法模式" class="headerlink" title="方法模式"></a>方法模式</h2><p><strong>特征:</strong> 方法一定是依附于一个对象, 将函数赋值给对象的一个属性, 那么就成为了方法.</p>
 <figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">f</span>(<span class="params"></span>) </span>&#123;</div><div class="line">    <span class="keyword">this</span>.method = <span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;&#125;;</div><div class="line">&#125;</div><div class="line"></div><div class="line"><span class="keyword">var</span> o = &#123;</div><div class="line">    <span class="attr">method</span>: <span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;&#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
 <p><code>this</code>在方法模式调用中的含义:<strong><em>表示函数所依附的这个对象</em></strong></p>
 <h2 id="构造器调用模式"><a href="#构造器调用模式" class="headerlink" title="构造器调用模式"></a>构造器调用模式</h2><p>由于构造函数只是给 this 添加成员. 没有做其他事情. 而方法也可以完成这个操作, 就 this 而言, 构造函数与方法没有本质区别.</p>
