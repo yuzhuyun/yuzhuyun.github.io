@@ -339,8 +339,7 @@
 </tr>
 </tbody>
 </table>
-<p>##Array对象方法</p>
-<table>
+<h2 id="Array对象方法"><a href="#Array对象方法" class="headerlink" title="Array对象方法"></a>Array对象方法</h2><table>
 <thead>
 <tr>
 <th>方法</th>
@@ -520,8 +519,7 @@
 <p><strong>特征:</strong>使用 new 关键字, 来引导构造函数.</p>
 <figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">Person</span>(<span class="params"></span>)</span>&#123;</div><div class="line">    <span class="keyword">this</span>.name = <span class="string">"zhangsan"</span>;</div><div class="line">    <span class="keyword">this</span>.age = <span class="number">19</span>;</div><div class="line">    <span class="keyword">this</span>.sayHello = <span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</div><div class="line">    &#125;;</div><div class="line">&#125;</div><div class="line"><span class="keyword">var</span> p = <span class="keyword">new</span> Person();</div></pre></td></tr></table></figure>
 <p>构造函数中发<code>this</code>与方法中一样, 表示对象, 但是构造函数中的对象是刚刚创建出来的对象</p>
-<p>###关于构造函数中<code>return</code>关键字的补充说明</p>
-<ul>
+<h3 id="关于构造函数中return关键字的补充说明"><a href="#关于构造函数中return关键字的补充说明" class="headerlink" title="关于构造函数中return关键字的补充说明"></a>关于构造函数中<code>return</code>关键字的补充说明</h3><ul>
 <li><p>构造函数中不需要<code>return</code>, 就会默认的<code>return this</code></p>
 </li>
 <li><p>如果手动的添加<code>return</code>, 就相当于 return this</p>
